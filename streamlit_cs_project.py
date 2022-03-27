@@ -187,8 +187,6 @@ elif choice == "Build Project":
     st.write("##### 1. Data")
     st.dataframe(data.head(10))
     st.write("- Dữ liệu có: ", data.shape[0], "dòng")
-    data = data.drop_duplicates()
-    st.write("- Sau khi xóa các dòng trùng, dữ liệu còn: ", data.shape[0], "dòng")
 
     st.write("##### 2. RFM Model")
     st.write("""
